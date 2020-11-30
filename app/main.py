@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/hello')
 def hello_world():
     #return ("Helo, world!")
-    message = "Hola Mundo, soy Python! Ahora con CloudBuild y hablando JSON"
+    message = "Hola Mundo, soy Python! Ahora con CloudBuild y hablando JSON. Cambio"
     response = {
             "message": message,
             "length": len(message)
