@@ -14,7 +14,7 @@ if redis_host and redis_port:
     redis_client = redis.Redis(
             host=os.getenv('REDIS_HOST'),
             port=os.getenv('REDIS_PORT'),
-            db=0, decode_response=True
+            db=0, decode_responses=True
     )
 else:
     redis_client = None
